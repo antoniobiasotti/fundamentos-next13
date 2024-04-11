@@ -4,6 +4,10 @@ interface ProductProps {
     }
 }
 
-export default function Product(props: ProductProps) {
-    return <h1>Product: {props.params.id}</h1>
+export default function Product({ params }: ProductProps) {
+    return ( 
+        <div>
+            <h1>Product: {props.params.id}</h1>
+        </div>
+    )
 }
